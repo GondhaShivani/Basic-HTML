@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Marquee</title>
+    </head>
+    <body>
+        <h1>[4] Marquee</h1>
+        <!--
+            behavior
+            1] scroll(bydefault)(left to right)
+            scrollamount="2" = 2 sec speed
+            direction="right" = left to right
+            -> right left up down
+            scrolldelay="8" = wi8 for 8 sec and starts 2nd time
+            loop="2" = run for 2 times
+            width= cover 20% area of the screen
+
+            2] slide(animation run only 1 time)
+
+            3] alternate=(left touch then right touch)
+        -->
+        <h1>scroll</h1>
+        <marquee behavior="scroll" $scrollamount="16" direction="right" scrolldelay="8" loop="2" bgcolor="yellow" width="20%">Hello World</marquee>
+
+        <h1>slide</h1>
+        <marquee behavior="slide" bgcolor="pink" direction="up" height="20%" loop="5">Hello World</marquee>
+
+        <h1>alternate</h1>
+        <marquee behavior="alternate" bgcolor="skyblue">Hello World</marquee>
+
+        <br><br>
+        <a href="Pre_Horizontal_Rule.htm">click for [5] Pre & Horizontal_Rule page</a>
+    </body>
+</html>
