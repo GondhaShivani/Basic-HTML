@@ -1,0 +1,87 @@
+<!--
+    name = input text box
+    password = input password box
+    gender = input radio button
+    hobbies = input checkbox
+    country = select box
+    message = textarea
+    save = input submit button
+    reset = input reset button
+-->
+
+<html>
+	<head>
+		<title>[14] Form Tags</title>
+	</head>
+	
+	<body>
+        <!-- METHOD = GET- It requests the data from a specified resource. POST- It submits the processed data to a specified resource. -->
+        <form action="" method="post">
+        <fieldset>
+			<legend><b><h2><u>Enter Personal Detail</u></h2></b></legend><br>
+            <label>Name</label> 
+            <input type="text" name="fname" value="" placeholder="Enter your name" /> <br><br>
+
+            <label>Password</label> 
+            <input type="password" name="" />  <br><br>
+
+            <label>Gender</label>                <!-- for=if click on text then also select-->
+            <input type="radio" name="gender" id="male" /><label for="male">Male</label>
+            <input type="radio" name="gender" id="female"><label for="female">Female</label> <br><br>
+
+            <label>Hobbies</label> 
+            <input type="checkbox" name="hobby" id="music" /><label for="music">Music</label> 
+            <input type="checkbox" name="hobby" id="football"><label for="football">Football</label> <br><br>
+
+            <label>Message</label> <textarea rows="10" cols="60" placeholder="Type a Message"></textarea> <br><br>
+
+            <label>Country</label>
+            <select name="" size="3" multiple>
+				<option value="in">India</option>
+				<option value="pk">Pakistan</option>
+				<option value="ne">Nepal</option>
+				<option value="cn" selected>China</option>
+			</select><br/><br/>
+
+			<label>Cars</label>
+            <select>
+				<optgroup label="Toyota">
+				  <option>Innova</option>
+				  <option>Etios</option>
+				  <option>Fortuner</option>
+				</optgroup>
+			    <optgroup label="Renault">
+				  <option>Kwid</option>
+				  <option>Duster</option>
+				  <option>Captur</option>
+				</optgroup>
+			</select><br><br>
+
+            <label>Cars</label>
+            <!-- input box and select box both in one, in datalist list and id must be same-->
+            <input list="cars" placeholder="Search or Select">					
+				<datalist id="cars">
+					<option value="Innova">
+					<option value="Kwid">
+					<option value="Etios">
+					<option value="Swift">
+					<option value="Duster">
+				</datalist>
+			    <br><br>
+                
+            <label>Upload File</label> <!-- video/* -> video file acceptable in any formate-->
+            <input type="file" accept="video/*" name="" /><br><br>
+
+            <input type="submit" value="Save" /><br><br>
+			
+			<input type="reset" /><br><br>
+
+			<input type="image" src="html-image_tag.jpg" width="200px" alt="Submit button" /><br>
+			</fieldset>
+
+        </form>
+
+        <br>
+        <a href="HTML5.html">click for [15] HTML5 Input Types</a>
+    </body>
+</html>
